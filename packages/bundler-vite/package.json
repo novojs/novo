@@ -1,0 +1,53 @@
+{
+  "name": "@novojs/bundler-vite",
+  "version": "0.0.0-alpha.1",
+  "description": "novo",
+  "keywords": [
+    "novo"
+  ],
+  "homepage": "https://novojs.com",
+  "bugs": {
+    "url": "https://github.com/novojs/novo/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/novojs/novo",
+    "directory": "packages/bundler-vite"
+  },
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch"
+  },
+  "dependencies": {
+    "react-router-dom": "^6.11.2"
+  },
+  "devDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.8",
+    "react-dom": ">=16.8"
+  },
+  "engines": {
+    "node": "^14.18.0 || >=16.10.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "authors": [
+    "Zack <lorenx@163.com> (https://github.com/loyep)"
+  ]
+}
