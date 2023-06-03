@@ -2,7 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import Home from './pages/index'
 // @ts-ignore
-import config from '#aora/config'
+import config from '#novo/config'
 
 console.log(config)
 

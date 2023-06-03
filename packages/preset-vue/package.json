@@ -1,5 +1,5 @@
 {
-  "name": "novojs",
+  "name": "@novojs/preset-vue",
   "version": "0.0.0-alpha.1",
   "description": "novo",
   "keywords": [
@@ -12,7 +12,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/novojs/novo",
-    "directory": "packages/novojs"
+    "directory": "packages/preset-vue"
   },
   "license": "MIT",
   "exports": {
@@ -31,15 +31,13 @@
     "dev": "tsup --watch"
   },
   "dependencies": {
-    "react-router-dom": "^6.11.2"
+    "vue-router": "^4.2.2"
   },
   "devDependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "vue": "^3.3.4"
   },
   "peerDependencies": {
-    "react": ">=16.8",
-    "react-dom": ">=16.8"
+    "vue": ">=3.2.0"
   },
   "engines": {
     "node": "^14.19.0 || >=16.10.0"

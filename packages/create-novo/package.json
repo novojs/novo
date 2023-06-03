@@ -42,7 +42,7 @@
     "react-dom": ">=16.8"
   },
   "engines": {
-    "node": "^14.18.0 || >=16.10.0"
+    "node": "^14.19.0 || >=16.10.0"
   },
   "publishConfig": {
     "access": "public"
