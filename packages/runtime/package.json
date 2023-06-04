@@ -15,6 +15,7 @@
     "directory": "packages/runtime"
   },
   "license": "MIT",
+  "type": "module",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",

@@ -15,6 +15,7 @@
     "directory": "packages/preset-react"
   },
   "license": "MIT",
+  "type": "module",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",

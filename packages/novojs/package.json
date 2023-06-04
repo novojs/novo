@@ -15,6 +15,7 @@
     "directory": "packages/novojs"
   },
   "license": "MIT",
+  "type": "module",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -24,11 +25,12 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "bin"
   ],
   "scripts": {
     "build": "tsup",
-    "dev": "tsup --watch"
+    "dev": "tsup"
   },
   "dependencies": {
     "@novojs/cli": "workspace:*"
@@ -37,6 +39,9 @@
   "peerDependencies": {},
   "engines": {
     "node": "^14.19.0 || >=16.10.0"
+  },
+  "bin": {
+    "novo": "./bin/novo.mjs"
   },
   "publishConfig": {
     "access": "public"

@@ -15,6 +15,7 @@
     "directory": "packages/cli"
   },
   "license": "MIT",
+  "type": "module",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -28,7 +29,7 @@
   ],
   "scripts": {
     "build": "tsup",
-    "dev": "tsup --watch"
+    "dev": "tsup"
   },
   "dependencies": {
     "react-router-dom": "^6.11.2"
