@@ -31,16 +31,10 @@
     "dev": "tsup --watch"
   },
   "dependencies": {
-    "react-router-dom": "^6.11.2"
+    "@novojs/cli": "workspace:*"
   },
-  "devDependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
-  "peerDependencies": {
-    "react": ">=16.8",
-    "react-dom": ">=16.8"
-  },
+  "devDependencies": {},
+  "peerDependencies": {},
   "engines": {
     "node": "^14.19.0 || >=16.10.0"
   },
