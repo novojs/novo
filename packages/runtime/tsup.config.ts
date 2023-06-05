@@ -11,8 +11,6 @@ export default defineConfig((opts) => {
   ]
   return [
     {
-      clean: true,
-      dts: true,
       format: ['esm'],
       external,
       entry: ['src/*.ts'],

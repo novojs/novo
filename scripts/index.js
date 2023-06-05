@@ -17,7 +17,7 @@ export async function run() {
   console.log(pico.cyan(`novo-scripts: ${name}\n`))
 
   const scriptPathAsStr = JSON.stringify(scriptsPath)
-  const spawn = sync('tsx', [scriptPathAsStr, ...throughArgs], {
+  const spawn = sync('pnpm tsx', [scriptPathAsStr, ...throughArgs], {
     env: process.env,
     cwd: process.cwd(),
     stdio: 'inherit',

@@ -28,8 +28,9 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup",
-    "dev": "tsup"
+    "build": "novo-scripts build",
+    "clean": "rimraf dist",
+    "dev": "novo-scripts dev"
   },
   "dependencies": {
     "react-router-dom": "^6.11.2"

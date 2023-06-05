@@ -28,8 +28,9 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup",
-    "dev": "tsup --watch"
+    "build": "novo-scripts build",
+    "clean": "rimraf dist",
+    "dev": "novo-scripts dev"
   },
   "dependencies": {
     "vue-router": "^4.2.2"

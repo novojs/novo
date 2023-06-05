@@ -1,5 +1,5 @@
 export function run() {
-  console.log('Hello Novojs!')
+  console.log('cli run')
 }
 
 export * from './service'

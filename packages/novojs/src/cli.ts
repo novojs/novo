@@ -5,4 +5,9 @@ export class NovoService extends CoreService {
     super()
     console.log('NovoService')
   }
+
+  async run() {
+    super.run()
+    console.log('Hello Novojs!')
+  }
 }

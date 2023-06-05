@@ -6,16 +6,11 @@
       "outputs": ["dist/**"]
     },
     "dev": {
-      "dependsOn": ["^dev"],
-      "cache": false,
-      "outputs": ["dist/**"]
+      "cache": false
     },
-    "test": {
-      "outputs": []
-    },
-    "lint": {
-      "outputs": []
+    "clean": {
+      "cache": false
     }
   },
-  "globalDependencies": ["tsconfig.json", "tsup.config.ts", "typescript"]
+  "globalDependencies": ["tsconfig.json", "typescript"]
 }

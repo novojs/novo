@@ -24,13 +24,17 @@
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "bin": {
+    "novo": "./bin/novo.mjs"
+  },
   "files": [
     "dist",
     "bin"
   ],
   "scripts": {
-    "build": "tsup",
-    "dev": "tsup"
+    "build": "novo-scripts build",
+    "clean": "rimraf dist",
+    "dev": "novo-scripts dev"
   },
   "dependencies": {
     "@novojs/cli": "workspace:*"
@@ -39,9 +43,6 @@
   "peerDependencies": {},
   "engines": {
     "node": "^14.19.0 || >=16.10.0"
-  },
-  "bin": {
-    "novo": "./bin/novo.mjs"
   },
   "publishConfig": {
     "access": "public"
