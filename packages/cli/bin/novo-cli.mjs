@@ -8,6 +8,4 @@ async function main() {
   await service.run()
 }
 
-main().then(r => {
-  console.log(r)
-})
+main()

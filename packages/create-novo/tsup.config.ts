@@ -1,23 +1,16 @@
-import fse from 'fs-extra'
-import path from 'pathe'
 import { defineConfig } from 'tsup'
 
-export default defineConfig((opts) => {
-  const pkg = fse.readJSONSync(path.resolve(__dirname, 'package.json'))
-  const external = [
-    ...Object.keys(pkg.dependencies || {}),
-    ...Object.keys(pkg.devDependencies || {}),
-    ...Object.keys(pkg.peerDependencies || {}),
-  ]
-  return [
-    {
-      format: ['esm'],
-      external,
-      entry: ['src/*.ts'],
-      sourcemap: !!opts.watch,
-      outDir: 'dist',
-      platform: 'node',
-      target: 'node14',
-    },
-  ]
-})
+export default defineConfig((opts) => [
+  {
+    format: ["cjs", "esm"],
+    entry: ["src/**/*.ts"],
+    sourcemap: !!opts.watch,
+    outDir: 'dist',
+    platform: 'node',
+    target: 'node14',
+    skipNodeModulesBundle: true,
+    tsconfig: "./tsconfig.json",
+    dts: true,
+    clean: true,
+  },
+])

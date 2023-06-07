@@ -32,9 +32,9 @@
     "bin"
   ],
   "scripts": {
-    "build": "novo-scripts build",
+    "build": "tsup",
     "clean": "rimraf dist",
-    "dev": "novo-scripts dev"
+    "dev": "pnpm build --watch"
   },
   "dependencies": {
     "@novojs/cli": "workspace:*"

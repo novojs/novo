@@ -28,12 +28,12 @@
     "dist"
   ],
   "scripts": {
-    "build": "novo-scripts build",
+    "build": "tsup",
     "clean": "rimraf dist",
-    "dev": "novo-scripts dev"
+    "dev": "tsup --watch"
   },
   "dependencies": {
-    "react-router-dom": "^6.11.2"
+    "react-router-dom": "^6.12.0"
   },
   "devDependencies": {
     "react": "^18.2.0",
