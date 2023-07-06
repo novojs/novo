@@ -68,7 +68,7 @@
     "novo-scripts": "workspace:*",
     "only-allow": "^1.1.1",
     "pathe": "^1.1.1",
-    "prettier": "^2.8.8",
+    "prettier": "^3.0.0",
     "prettier-plugin-organize-imports": "^3.2.2",
     "prettier-plugin-packagejson": "^2.4.3",
     "resolve": "^1.22.2",
